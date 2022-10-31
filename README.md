@@ -18,24 +18,24 @@ arquivo requirementes.txt:
 
 ## Entre na pasta criada e inicie um ambiente virtual:
 
-$ cd teste-dsin
-$ python3 -m venv venv
+- $ cd teste-dsin
+- $ python3 -m venv venv
 
 ## Depois você deve ativá-lo com o seguinte comando:
 
-$ source ./venv/bin/activate
+- $ source ./venv/bin/activate
 
 ## Após ativado, instale as bibliotecas necessárias para executar o projeto:
 
- $ pip install -r requirements.txt
+ - $ pip install -r requirements.txt
 
 ## Para poder ter o primeiro acesso e pode configurar a aplicação vamos executar o comando  'migrate' para gerar o banco de dados padrão do Django(SQLite). 
 
-$ ./manage.py migrate
+- $ ./manage.py migrate
 
 ## E depois criar o superusuario:
 
-$ ./manage.py createsuperuser
+- $ ./manage.py createsuperuser
 
 Apelido/Usuário: admin
 E-mail: admin@mail.com
@@ -45,7 +45,7 @@ Password (again):
 
 ## Para iniciar o servidor depois deste passo você deve:
 
-(venv)$ ./manage.py runserver
+- $ ./manage.py runserver
 
 ## Para visualizar se tudo esta executando
 
