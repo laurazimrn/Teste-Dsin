@@ -1,6 +1,6 @@
 ## Avaliação Técnica DSIN - Teste Prático
 
-##Tecnologias utilizadas:
+## Tecnologias utilizadas:
 - Python 3
 - Django
 - Vscode
