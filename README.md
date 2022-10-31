@@ -1,5 +1,11 @@
 ## Avaliação Técnica DSIN - Teste Prático
 
+#Tecnologias utilizadas:
+Python 3
+Django
+Vscode
+Sqlite
+
 Esse projeto consiste em:
 - Criar uma agenda para disponibilizar os serviços do salão
 - Permitir o usuario escolher um serviço em dia e horario de acordo com agenda do salão
