@@ -1,0 +1,56 @@
+<!---{% extends "accounts/index.html" %}
+
+{% block title %}
+    Meus agendamentos
+{% endblock %}
+
+{% block accounts_container %}
+<h2>Meus agendamentos</h2>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>
+                ID
+            </th>
+            <th>
+                Cliente
+            </th>
+            <th>
+                Dia
+            </th>
+            <th>
+                Horario
+            </th>
+            <th>
+                Opções
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for agendamento in object_list %}
+        <tr>
+            <td>
+                <a href=""># {{ agendamento.pk }}</a>
+            </td>
+            <td>
+                {{ agendamento.agenda.profissional }}
+            </td>
+            <td>
+                {{ agendamento.agenda.dia|date:"d/m/Y" }}
+            </td>
+            <td>
+                {{ agendamento.agenda.get_horario_display }}
+            </td>
+            <td>
+                <a href="{% url 'profissional:agendar_agendamento_atualizar' agendamento.id %}" class="text-primary" style="padding-left: 10px; text-decoration: none;">
+                    <i class="fas fa-edit"></i>
+                </a>
+                <a href="{% url 'profissionais:agendar_agendamento_deletar' agendamento.id %}" class="mr-1 text-danger" style="padding-left: 10px; text-decoration: none;">
+                    <i class="fas fa-trash-alt"></i>
+                </a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

@@ -1,0 +1,57 @@
+{% extends "accounts/index.html" %}
+
+{% block title %}
+    Clientes
+{% endblock %}
+
+{% block accounts_container %}
+<h2>Clientes</h2>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>
+                ID
+            </th>
+            <th>
+                Nome
+            </th>
+            <th>
+                E-mail
+            </th>
+            <th>
+                CPF
+            </th>
+            <th>
+                Servico
+            </th>
+            <th>
+                Telefone
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for profissional in object_list %}
+        <tr>
+            <td>
+                <a href=""># {{ profissional.pk }}</a>
+            </td>
+            <td>
+                {{ profissional.nome }}
+            </td>
+            <td>
+                {{ profissional.email }}
+            </td>
+            <td>
+                {{ profissional.cpf }}
+            </td>
+            <td>
+                {{ profissional.servico }}
+            </td>
+            <td>
+                {{ profissional.telefone }}
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

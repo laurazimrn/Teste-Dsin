@@ -1,0 +1,33 @@
+{% extends "accounts/index.html" %}
+
+{% block title %}
+   Serviço
+{% endblock %}
+
+{% block accounts_container %}
+<h2>Serviço</h2>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>
+                ID
+            </th>
+            <th>
+                Nome
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for servico in object_list %}
+        <tr>
+            <td>
+                <a href=""># {{ servico.pk }}</a>
+            </td>
+            <td>
+                {{ servico.nome }}
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
